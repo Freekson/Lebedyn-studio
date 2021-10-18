@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", cursive;
+}
+
+header {
+  background-color: #fc5185;
+}
+header .all-header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .all-header-content .logo {
+  font-size: 18pt;
+  padding: 1.5% 3%;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #20232a;
+  flex-basis: 30%;
+}
+header .all-header-content nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 70%;
+  font-size: 12pt;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header .all-header-content nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+header .all-header-content nav ul li a {
+  text-decoration: none;
+  color: #20232a;
+}
+header .all-header-content nav .main-list {
+  margin-left: -20%;
+}
+header .all-header-content nav .main-list ul li {
+  margin-right: 15%;
+}
+header .all-header-content nav .social-list {
+  font-size: 16pt;
+}
+header .all-header-content nav .social-list ul li {
+  margin-right: 30%;
+}
+
+main {
+  height: 700px;
+  width: 100%;
+  background-color: #1d2026;
+}

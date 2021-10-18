@@ -1,0 +1,79 @@
+
+//main colors
+
+$header-color: #fc5185;
+$footer-color: #18828a;
+$first-background-color: #1d2026;
+$second-background-color: #20232a;
+$first-text-color: #0e0b0b;
+$second-text-color: #fcefee;
+
+//body 
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+//header
+
+header{
+    background-color: $header-color;
+    .all-header-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            font-size: 18pt;
+            padding: 1.5% 3%;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $second-background-color;
+            flex-basis: 30%;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-basis: 70%;
+            font-size: 12pt;
+            font-weight: 600;
+            text-transform: uppercase;
+            ul{
+                display: flex;
+                list-style: none;
+                padding-left: 0;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $second-background-color;
+                    }
+                }
+            }
+            .main-list{
+                margin-left: -20%;
+                ul{
+                    li{
+                        margin-right: 15%;
+                    }
+                }
+            }
+            .social-list{
+                font-size: 16pt;
+                ul{
+                    li{
+                        margin-right: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+main{
+    height: 700px;
+    width: 100%;
+    background-color: $first-background-color;
+}
