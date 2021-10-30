@@ -148,12 +148,12 @@ main{
 // article section
 
     .article{
-    margin-top: 18%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: $second-text-color;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $second-text-color;
         .first-string{
             font-size: 28pt;
             margin-bottom: 1%;
@@ -163,10 +163,11 @@ main{
             background-color: $header-color;
             width: 20%;
             margin: 0;
-            border-color: #330867;
+            border-color: $header-color;
             transition: all 0.2s linear;
         }
     }
+
 
 //  all image section
 
@@ -230,6 +231,9 @@ main{
 
 // first section(about us)
 
+    .about-us{
+        margin-top: 20%;
+    }
     .about-us:hover{
         .article{
             hr{
@@ -242,7 +246,6 @@ main{
 
     .our-team{
         .image-section{
-            margin-bottom: 20%;
             .image-block{
                 display: flex;
                 flex-direction: column;
