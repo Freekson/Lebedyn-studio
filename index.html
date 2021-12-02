@@ -13,10 +13,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/e9b46f2fc6.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/dist/main.css">
+    <link rel="stylesheet" href="css/libs/animate.css">
+    
     <title>Lebedyn Studio</title>
 </head>
 <body>
@@ -24,86 +32,135 @@
     <!--Header-->
 
     <header>
+        
         <div class="all-header-content">
             <div class="logo">
-                Lebedyn Studio
+                <a href="index.html" data-scroll="#top">Lebedyn Studio</a>
             </div>
             <nav>
                 <div class="main-list">
                     <ul>
                         <li>
-                            <a href="#1">about</a>
+                            <a href="#" data-scroll="#about">about</a>
                         </li>
                         <li>
-                            <a href="#2">work</a>
+                            <a href="#" data-scroll="#work">work</a>
                         </li>
                         <li>
-                            <a href="#3">team</a>
+                            <a href="#" data-scroll="#team">team</a>
                         </li>
                         <li>
-                            <a href="#4">blog</a>
+                            <a href="#" data-scroll="#blog">blog</a>
                         </li>
                         <li>
-                            <a href="#5">contact</a>
+                            <a href="#" data-scroll="#contact">contact</a>
                         </li>
                     </ul>
                 </div>
                 <div class="social-list">
                     <ul>
                         <li>
-                            <a href="#1"><i class="fab fa-instagram"></i></a>
+                            <a href="https://instagram.com/lebedynstudio?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a href="#2"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/Lebedyn-Studio"><i class="fab fa-github"></i></a>
                         </li>
                         <li>
-                            <a href="#3"><i class="fab fa-discord"></i></a>
+                            <a href="https://discord.com/"><i class="fab fa-discord"></i></a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
+
+        <!--Header for mobile-->
+
+        <div class="all-header-adaptive-content">
+            <div class="logo">
+                <a href="#" data-scroll="#top">Lebedyn Studio</a>
+            </div>
+            <nav id="menu-adaptive">
+                <div class="main-list">
+                    <ul>
+                        <li>
+                            <a href="#" data-scroll="#about">about</a>
+                        </li>
+                        <li>
+                            <a href="#" data-scroll="#work">work</a>
+                        </li>
+                        <li>
+                            <a href="#" data-scroll="#team">team</a>
+                        </li>
+                        <li>
+                            <a href="#" data-scroll="#blog">blog</a>
+                        </li>
+                        <li>
+                            <a href="#" data-scroll="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav-toggle " id="menu-button"> <!--Can be active-->
+                <span class="toogle">
+
+                </span>
+            </div>
+        </div>
+
     </header>
 
+    <!--Main-->
+
     <main>
-        <img src="css/source/controller-2618897_1920.png" class="header-img" alt="sorry :(">
-        <div class="text">
-            <h2>Lebedyn Studio</h2>
+        <img src="css/source/first-background.png" class="header-img" alt="sorry we can't find image :(">
+        <div class="text" id="top">
+            <div class="main-text">
+                <h2>Lebedyn Studio</h2>
+            </div>
             <h6>game development studio</h6>
             <hr>
             <p class="header-info">
-                We can do whatever you want, even what you can't imagine. 12 years of experience in game development, more than 10 employees with the highest programming skills
+                We can do whatever you want, even what you can't imagine. <br> 12 years of experience in game development, more than 10 employees with the highest programming skills
             </p>
-            <button>Learn more</button>
+            <a href="about-us.html" class="button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Learn more
+            </a>
         </div>
-        <section class="about-us">
-            <div class="article">
+
+        <!--About us section-->
+
+        <section class="about-us" id="about">
+            <div class="article wow slideInLeft">
                 <p class="first-string">About us</p>
                 <hr>
                 <p class="second-string">We a profesional team</p>
             </div>
             <div class="image-section">
-                <div class="image-block">
+                <div class="image-block wow slideInLeft">
                     <div class="image">
-                        <img src="css/source/boss-3069427_1920.jpg" alt="">
+                        <img src="css/source/about-photo1.png" alt="sorry we can't find image :(">
                     </div>
                     <div class="image-section-text">
                         <i class="fas fa-tasks"></i><br>
                         our manager
                     </div>
                 </div>
-                <div class="image-block">
+                <div class="image-block wow slideInLeft">
                     <div class="image">
-                        <img src="css/source/computer-2982270_1920.jpg" alt="">
+                        <img src="css/source/about-photo2.png" alt="sorry we can't find image :(">
                     </div>
                     <div class="image-section-text">
                         <i class="fas fa-laptop-house"></i><br>
                         our laptop
                     </div>
                 </div>
-                <div class="image-block">
+                <div class="image-block wow slideInLeft">
                     <div class="image">
-                        <img src="css/source/fight-4742068_1920_photo-resizer.ru.jpg" alt="">
+                        <img src="css/source/about-photo3.png" alt="sorry we can't find image :(">
                     </div>
                     <div class="image-section-text">
                         <i class="fas fa-handshake"></i><br>
@@ -112,55 +169,111 @@
                 </div>
             </div>
         </section>
-        <section class="our-work">
-            <div class="article">
+
+        <!--Work section-->
+
+        <section class="our-work" id="work">
+            <div class="article wow slideInLeft">
                 <p class="first-string">Our work</p>
-                <hr>
-                <p class="second-string">This is our profecional</p>
-            </div>
-        </section>
-        <section class="our-team">
-            <div class="article">
-                <p class="first-string">Our team</p>
                 <hr>
                 <p class="second-string">these are examples of our work</p>
             </div>
-            <div class="image-section">
-                <div class="image-block">
+            <div class="work-all">
+                <div class="first-work-block">
+                    <div class="work-block wow slideInLeft">
+                        <div class="another-block">
+                            <div class="image-section">
+                                <img src="css/source/text-image-3.png" alt="sorry we can't find image :(">
+                            </div>
+                            <div class="text-section">
+                                <h5>Amazing model</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae libero tempora saepe. Vel, quos incidunt consequatur totam soluta, cumque molestias nesciunt maiores dolore, voluptates eum. Perferendis cupiditate officia odio dolores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-block wow slideInLeft">
+                        <div class="another-block">
+                            <div class="image-section">
+                            <img src="css/source/text-image-2.png" alt="sorry we can't find image :(">
+                        </div>
+                        <div class="text-section">
+                            <h5>Amazing сity</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae libero tempora saepe. Vel, quos incidunt consequatur totam soluta, cumque molestias nesciunt maiores dolore, voluptates eum. Perferendis cupiditate officia odio dolores.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-work-block">
+                    <div class="work-block wow slideInLeft">
+                        <div class="another-block">
+                            <div class="image-section">
+                                <img src="css/source/text-image-1.png" alt="sorry we can't find image :(">
+                            </div>
+                            <div class="text-section">
+                                <h5>Amazing spider</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae libero tempora saepe. Vel, quos incidunt consequatur totam soluta, cumque molestias nesciunt maiores dolore, voluptates eum. Perferendis cupiditate officia odio dolores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-block wow slideInLeft">
+                        <div class="another-block">
+                            <div class="image-section">
+                                <img src="css/source/text-image-4.jpg" alt="sorry we can't find image :(">
+                            </div>
+                            <div class="text-section">
+                                <h5>Amazing sword</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae libero tempora saepe. Vel, quos incidunt consequatur totam soluta, cumque molestias nesciunt maiores dolore, voluptates eum. Perferendis cupiditate officia odio dolores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Team section-->
+
+        <section class="our-team" id="team">
+            <div class="article wow slideInLeft">
+                <p class="first-string">Our team</p>
+                <hr>
+                <p class="second-string">This is our professionalsl</p>
+            </div>
+            <div class="image-section ">
+                <div class="image-block wow slideInLeft">
                     <div class="image">
-                        <img src="css/source/team-photo1.jpg" alt="">
+                        <img src="css/source/team-photo1.jpg" alt="sorry we can't find image :(">
                     </div>
                     <div class="image-section-text">
-                        <a href="#2"><i class="fab fa-github"></i></a>
-                        <a href="#3"><i class="fab fa-discord"></i></a>
+                        <a href="https://github.com/TotsamiyDmitriy"><i class="fab fa-github"></i></a>
+                        <a href="https://discord.com/"><i class="fab fa-discord"></i></a>
                     </div>
                     <div class="under-image-text">
                         <h6>Dmitrij</h6>
                         <p>Game designer</p>
                     </div>
                 </div>
-                <div class="image-block">
+                <div class="image-block wow slideInLeft">
                     <div class="image">
-                        <img src="css/source/team-photo2.jpg" alt="">
+                        <img src="css/source/team-photo2.jpg" alt="sorry we can't find image :(">
                     </div>
                     <div class="image-section-text">
-                        <a href="#2"><i class="fab fa-github"></i></a>
-                        <a href="#1"><i class="fab fa-instagram"></i></a>
-                        <a href="#3"><i class="fab fa-discord"></i></a>
+                        <a href="https://github.com/Freekson"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/freeksons/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.com/"><i class="fab fa-discord"></i></a>
                     </div>
                     <div class="under-image-text">
                         <h6>Yehor</h6>
                         <p>Programmer</p>
                     </div>
                 </div>
-                <div class="image-block">
+                <div class="image-block wow slideInLeft">
                     <div class="image">
-                        <img src="css/source/team-photo3.jpg" alt="">
+                        <img src="css/source/team-photo3.jpg" alt="sorry we can't find image :(">
                     </div>
                     <div class="image-section-text">
-                        <a href="#2"><i class="fab fa-github"></i></a>
-                        <a href="#1"><i class="fab fa-instagram"></i></a>
-                        <a href="#3"><i class="fab fa-discord"></i></a>
+                        <a href="https://github.com/Denyska-H"><i class="fab fa-github"></i></a>
+                        <a href="https://instagram.com/denys.life9?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.com/"><i class="fab fa-discord"></i></a>
                     </div>
                     <div class="under-image-text">
                         <h6>Denis</h6>
@@ -169,6 +282,212 @@
                 </div>
             </div>
         </section>
+
+        <!--Blog section-->
+
+        <section class="our-blog" id="blog">
+            <div class="article wow slideInLeft">
+                <p class="first-string">Our blog</p>
+                <hr>
+                <p class="second-string">This is our news</p>
+            </div>
+            <div class="blog-all">
+                <div class="blog-block wow slideInLeft">
+                    <div class="blog">
+                        <h4>First meeting</h4>
+                        <p class="date">13.06.2021</p>
+                        <p class="blog-article">The first meeting took place, at which the following topics were discussed: the distribution of roles, tasks for the current week and the approximate time of the beginning of the development of the game<br> <br>
+                        Illo commodi obcaecati unde quisquam necessitatibus, excepturi libero architecto, dolores sapiente, inventore earum! Obcaecati at molestias voluptas perferendis dignissimos. Ratione earum incidunt <br>non explicabo assumenda modi. Dignissimos deleniti nisi fugit!
+                        Placeat praesentium, corrupti deleniti tempora voluptate alias quo dolorum ducimus asperiores itaque dicta. Optio in dolor, iure ad earum ex incidunt id totam, temporibus eos ratione reprehenderit, officia soluta rerum? <a href="#">read more...</a> </p>
+                    </div>
+                </div>
+                <div class="blog-block wow slideInLeft">
+                    <div class="blog">
+                        <h4>Third meeting</h4>
+                        <p class="date">20.06.2021</p>
+                        <p class="blog-article">The third meeting took place, at which we discussed what kind of plot would be the place for sending the boundless game maiden to a wide path and decided that this would be the plot of Dima and Yegor. If someone has not read it yet, then it is in our-game section. From now on, subsequent meetings will take much longer (3-4 hours). <br> <br>
+                        Illo commodi obcaecati unde quisquam necessitatibus, excepturi libero architecto, dolores sapiente, inventore earum! Obcaecati at molestias voluptas perferendis dignissimos. Ratione earum incidunt <br>non explicabo assumenda modi. Dignissimos deleniti nisi fugit!
+                        Placeat praesentium, corrupti deleniti tempora voluptate alias quo dolorum ducimus asperiores itaque dicta. Optio in dolor, iure ad earum ex incidunt id totam, temporibus eos ratione reprehenderit, officia soluta rerum? <a href="#">read more...</a> </p>
+                    </div>
+                </div>
+                <div class="blog-block wow slideInLeft">
+                    <div class="blog">
+                        <h4>New web-site</h4>
+                        <p class="date">14.11.2021</p>
+                        <p class="blog-article">The new web-site <br> <br>
+                            Finally, we have completed the main work on the site. We will be adding more information to the site shortly. New portfolio and blog pages are planned. Further more.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    
+    <!--Footer-->
+
+    <footer id="contact">
+        <div class="article wow slideInLeft">
+            <p class="first-string">Our contact</p>
+            <hr>
+            <p class="second-string">This is our contacts</p>
+        </div>
+        <div class="all-content">
+            <div class="first-section wow slideInLeft">
+                <h4>Lebedyn studio</h4>
+                <p class="aside-text">
+                    Roma verny groshi. Repellendus ut ullam neque officia aliquid vel blanditiis et tempora, voluptate repellat sunt nulla similique harum a necessitatibus laudantium animi iusto tenetur voluptates distinctio! Reiciendis quo inventore qui laudantium aliquam, praesentium.
+                </p>
+                <hr>
+                <div class="social">
+                    <p>Follow Us:</p>
+                    <a href="https://instagram.com/lebedynstudio?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.com/"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a href="https://desktop.telegram.org/"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Write to us:">
+                    <button>Send</button>
+                </form>
+                <div class="mail">
+                    <p>Our email:</p>
+                    <p>Lebedyn.studio@gmail.com</p>
+                </div>
+            </div>
+            <div class="second-section wow slideInLeft">
+                <h4>Gallery</h4>
+                <div class="column">
+                    <div class="image-block">
+                        <div class="image">
+                            <img src="css/source/team-photo1.jpg" alt="sorry we can't find image :(">
+                        </div>
+                        <div class="image-section-text">
+                            <a href="https://instagram.com/lebedynstudio?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <div class="image">
+                            <img src="css/source/team-photo2.jpg" alt="sorry we can't find image :(">
+                        </div>
+                        <div class="image-section-text">
+                            <a href="https://instagram.com/lebedynstudio?utm_medium=copy_link"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <div class="image">
+                            <img src="css/source/team-photo3.jpg" alt="sorry we can't find image :(">
+                        </div>
+                        <div class="image-section-text">
+                            <a href="https://desktop.telegram.org/"><i class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image-block">
+                        <div class="image">
+                            <img src="css/source/text-image-1.png" alt="sorry we can't find image :(">
+                        </div>
+                        <div class="image-section-text">
+                            <a href="https://instagram.com/lebedynstudio?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <div class="image">
+                            <img src="css/source/text-image-2.png" alt="sorry we can't find image :(">
+                        </div>
+                        <div class="image-section-text">
+                            <a href="https://discord.com/"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <div class="image">
+                            <img src="css/source/text-image-3.png" alt="sorry we can't find image :(">
+                        </div>
+                        <div class="image-section-text">
+                            <a href="https://desktop.telegram.org/"><i class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image-block">
+                        <div class="image">
+                            <img src="css/source/about-photo1.png" alt="sorry we can't find image :(">
+                        </div>
+                        <div class="image-section-text">
+                            <a href="https://instagram.com/lebedynstudio?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <div class="image">
+                            <img src="css/source/about-photo2.png" alt="sorry we can't find image :(">
+                        </div>
+                        <div class="image-section-text">
+                            <a href="https://discord.com/"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <div class="image">
+                            <img src="css/source/about-photo3.png" alt="sorry we can't find image :(">
+                        </div>
+                        <div class="image-section-text">
+                            <a href="https://desktop.telegram.org/"><i class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="third-section wow slideInLeft">
+                <h4>News</h4>
+                <div class="all-news">
+                    <div class="news-block">
+                        <div class="news">
+                            <h3 class="header">First meeting</h3>
+                            <p class="date">13.06.2021</p>
+                            <p class="news-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolorem amet voluptatem iusto quam neque mollitia? Est eligendi perferendis expedita.</p>
+                        </div>
+                    </div>
+                    <div class="news-block">
+                        <div class="news">
+                            <h3 class="header">New workers</h3>
+                            <p class="date">02.11.2021</p>
+                            <p class="news-article">We are looking for people who can write a game, we are also looking for a sound producer and game designers, for details write to our mail</p>
+                        </div>
+                    </div>
+                    <div class="news-block">
+                        <div class="news">
+                            <h3 class="header">New web-site</h3>
+                            <p class="date">14.11.2021</p>
+                            <p class="news-article">Finally, we have completed the main work on the site. We will be adding more information to the site shortly. New portfolio and blog pages are planned. Further more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conclusion">
+            <hr>
+            <p>@Lebedyn studio 2021</p>
+        </div>
+    </footer>
+
+    <!--jQuerry and all scripts-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/dist/wow.js"></script>
+    <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
